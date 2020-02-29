@@ -47,24 +47,5 @@ public class SearchController{
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-
-   /* @PutMapping("/employees/{id}")
-    Employee updateEmployee(@RequestBody Employee newEmployee, @PathVariable Long id) {
-
-        return repository.findById(id).map(employee -> {
-            employee.setFirstName(newEmployee.getFirstName());
-            employee.setLastName(newEmployee.getLastName());
-            employee.setEmail(newEmployee.getEmail());
-            return repository.save(employee);
-        }).orElseGet(() -> {
-            newEmployee.setId(id);
-            return repository.save(newEmployee);
-        });
-    }*/
-
-    /*@DeleteMapping("/employees/{id}")
-    void deleteEmployee(@PathVariable Long id) {
-        repository.deleteById(id);
-    }*/
 }
 
