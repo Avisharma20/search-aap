@@ -1,6 +1,8 @@
 package com.search.service.controllers;
 
+import com.search.service.beans.Course;
 import com.search.service.beans.Student;
+import com.search.service.service.CourseService;
 import com.search.service.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,15 +20,10 @@ public class SearchController{
     @Autowired
     private StudentService studentService;
 
-    @PostMapping(path="/create", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE )
-    public ResponseEntity<Student> createOrSaveStudent(@RequestBody Student student) {
-        Student studentObj = studentService.registerStudent(student);
-        if(studentObj!=null ) {
-            return new ResponseEntity<>(studentObj, HttpStatus.OK);
-        }else {
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
+    @Autowired
+    private CourseService courseService;
+
+
 
     @GetMapping(path="/student/{id}", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE )
     public ResponseEntity<Object> getStudentById(@PathVariable Long id) {
@@ -43,6 +40,26 @@ public class SearchController{
         List<Student> studentObj = studentService.getAllStudents();
         if(!studentObj.isEmpty()) {
             return new ResponseEntity<>(studentObj, HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(path="/course/{id}", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE )
+    public ResponseEntity<Object> getCourseById(@PathVariable Long id) {
+        Optional<Course> courseObj = courseService.getByCourseId(id);
+        if(!courseObj.isEmpty()) {
+            return new ResponseEntity<>(courseObj.get(), HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>("Data not found",HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(path="/course", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE )
+    public ResponseEntity<List<Course>> getCourseAll() {
+        List<Course> courseObj = courseService.getAllCourse();
+        if(!courseObj.isEmpty()) {
+            return new ResponseEntity<>(courseObj, HttpStatus.OK);
         }else {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }

@@ -55,8 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,7 +79,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.serach-service [clean]">
+  <component name="RunManager" selected="Application.SerachServiceApplication">
     <configuration name="SerachServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.search.service.SerachServiceApplication" />
       <module name="serach-service.main" />
@@ -184,14 +184,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="371" y="97" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1582999892967">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="97" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1582999892967" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582976552421">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1582976552421" />
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1582984546593">
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1582999303356">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1582984546593" />
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1582999303356" />
     <state x="371" y="125" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582976546460">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -208,22 +212,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="400" y="88" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582996041293" />
-    <state width="1237" height="79" key="GridCell.Tab.0.bottom" timestamp="1582998654772">
+    <state width="1237" height="281" key="GridCell.Tab.0.bottom" timestamp="1583000498500">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="79" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582998654772" />
-    <state width="1237" height="79" key="GridCell.Tab.0.center" timestamp="1582998654772">
+    <state width="1237" height="281" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583000498500" />
+    <state width="1237" height="281" key="GridCell.Tab.0.center" timestamp="1583000498499">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="79" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582998654772" />
-    <state width="1237" height="79" key="GridCell.Tab.0.left" timestamp="1582998654772">
+    <state width="1237" height="281" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583000498499" />
+    <state width="1237" height="281" key="GridCell.Tab.0.left" timestamp="1583000498499">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="79" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582998654772" />
-    <state width="1237" height="79" key="GridCell.Tab.0.right" timestamp="1582998654772">
+    <state width="1237" height="281" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583000498499" />
+    <state width="1237" height="281" key="GridCell.Tab.0.right" timestamp="1583000498500">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="79" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582998654772" />
+    <state width="1237" height="281" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583000498500" />
     <state width="1237" height="227" key="GridCell.Tab.1.bottom" timestamp="1582997657024">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -252,16 +256,5 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1582973870180" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
