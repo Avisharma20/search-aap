@@ -1,25 +1,27 @@
 package com.search.service.beans;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "tbl_student")
-public class Student {
+public class Student implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
-
+    @JsonProperty("firstName")
     private String firstName;
-
+    @JsonProperty("lastName")
     private String lastName;
-
+    @JsonProperty("email")
     private String email;
-
+    @JsonProperty("college_code")
     private String college_code;
-
+    @JsonProperty("contactNo")
     private String contactNo;
-
+    @JsonProperty("courseCd")
     private String courseCd;
 
 
