@@ -2,6 +2,7 @@ package com.search.service.controllers;
 
 import com.search.service.beans.Course;
 import com.search.service.beans.Student;
+import com.search.service.common.PersonSpecification;
 import com.search.service.service.CourseService;
 import com.search.service.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,6 +59,17 @@ public class SearchController{
     @GetMapping(path="/course", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE )
     public ResponseEntity<List<Course>> getCourseAll() {
         List<Course> courseObj = courseService.getAllCourse();
+        if(!courseObj.isEmpty()) {
+            return new ResponseEntity<>(courseObj, HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(path="/getStudent", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE )
+    public ResponseEntity<List<Student>> getStudent(@RequestBody Student student) {
+        PersonSpecification spec = new PersonSpecification(student);
+        List<Student> courseObj = studentService.getStudent(spec);
         if(!courseObj.isEmpty()) {
             return new ResponseEntity<>(courseObj, HttpStatus.OK);
         }else {

@@ -1,6 +1,7 @@
 package com.search.service.service;
 
 import com.search.service.beans.Student;
+import com.search.service.common.PersonSpecification;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,4 +12,6 @@ public interface StudentService {
    public Optional<Student> getByStudentId(Long studentCd);
 
    public Student registerStudent(Student student);
+
+   public List<Student> getStudent(PersonSpecification spec);
 }
