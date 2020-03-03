@@ -44,6 +44,5 @@ public class StudentSpecification implements Specification<Student> {
                 return null;
         }
     }
-
 }
 

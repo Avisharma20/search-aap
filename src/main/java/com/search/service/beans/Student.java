@@ -14,7 +14,7 @@ public class Student implements Serializable {
     @JsonProperty("firstName")
     private String firstName;
     @JsonProperty("lastName")
-    private String lastName;
+    public String lastName;
     @JsonProperty("email")
     private String email;
     @JsonProperty("college_code")

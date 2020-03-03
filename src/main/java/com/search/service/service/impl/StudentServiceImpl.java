@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -34,5 +35,12 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public List<Student> getStudent(Specification spec) {
         return studentService.findAll(spec);
+    }
+    @Override
+    public List<Student> getAllBySpecification(Specification<Student> specification) {
+        // combine original specification (passed from outside) and filter-by-types specification
+        Specification<Student> finalSpec = specification
+                .and((root, query, cb) -> root.get("lastName").in(Arrays.asList(new String[]{"raina", "pqr"})));
+        return studentService.findAll(finalSpec);
     }
 }

@@ -14,4 +14,6 @@ public interface StudentService {
    public Student registerStudent(Student student);
 
    public List<Student> getStudent(Specification spec);
+
+   public List<Student> getAllBySpecification(Specification<Student> specification);
 }

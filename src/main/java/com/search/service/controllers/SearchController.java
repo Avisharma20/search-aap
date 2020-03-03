@@ -3,6 +3,7 @@ package com.search.service.controllers;
 import com.google.common.base.Joiner;
 import com.search.service.beans.Course;
 import com.search.service.beans.Student;
+import com.search.service.common.PersonSpecification;
 import com.search.service.common.SearchOperation;
 import com.search.service.common.StudentSpecificationsBuilder;
 import com.search.service.service.CourseService;
@@ -14,6 +15,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.regex.Matcher;
@@ -85,7 +87,17 @@ public class SearchController {
        List<Student> list= studentService.getStudent(s1);
        return new ResponseEntity<>(list, HttpStatus.OK);
     }
+    @GetMapping(path="/getStudents", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE )
+    public ResponseEntity<List<Student>> getStudentIn(@RequestParam(value = "search") String search) {
 
+        Student filter= new Student();
+        filter.setLastName(search);
+        PersonSpecification s= new PersonSpecification(filter);
+        Specification<Student> finalSpec = s
+                .or((root, query, cb) -> root.get("lastName").in(Arrays.asList("sharma")));
+        List<Student> list= studentService.getStudent(finalSpec);
+        return new ResponseEntity<>(list, HttpStatus.OK);
+    }
 
 }
 
