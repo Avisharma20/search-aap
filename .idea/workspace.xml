@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cdf649f-d7eb-4760-a44e-5ea63137a0f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/PersonSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/CriteriaParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/SearchCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/SearchOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/SpecSearchCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecificationsBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -16,22 +21,25 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/common/PersonSpecification.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/common/PersonSpecification.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/controllers/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/controllers/SearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/repository/StudentRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/repository/StudentRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/StudentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/impl/StudentServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/serach-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/serach-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.search.service.SerachServiceApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.search.service.SerachServiceApplicationTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.search.service.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.search.service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.search.service.SerachServiceApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.search.service.SerachServiceApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/common/PersonSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/PersonSpecification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/repository/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/repository/StudentRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/service/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +112,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -112,7 +121,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YTj1Gz5V0NVyqBLOI2JpjzArdQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -121,8 +132,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/search/service/common" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tutorials-master/tutorials-master/spring-rest-query-language" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -198,6 +209,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="serach-service [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="serach-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -223,9 +253,11 @@
       <item itemvalue="Gradle.serach-service [clean]" />
       <item itemvalue="Gradle.serach-service [bootRun]" />
       <item itemvalue="Gradle.serach-service [bootJar]" />
+      <item itemvalue="Gradle.serach-service [classes]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.serach-service [classes]" />
         <item itemvalue="Gradle.serach-service [bootJar]" />
         <item itemvalue="Gradle.serach-service [bootRun]" />
         <item itemvalue="Gradle.serach-service [build]" />
@@ -267,10 +299,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1582976552421" />
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1583083919431">
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1583252765971">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1583083919431" />
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1583252765971" />
     <state x="371" y="125" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582976546460">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -279,54 +311,62 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="490" y="231" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1582973360886" />
+    <state x="371" y="89" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583165751245">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="89" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1583165751245" />
+    <state x="396" y="45" key="#xdebugger.evaluate" timestamp="1583255545559">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="396" y="45" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1583255545559" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1582996886139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1582996886139" />
-    <state x="400" y="88" key="FileChooserDialogImpl" timestamp="1583083112360">
+    <state x="400" y="88" key="FileChooserDialogImpl" timestamp="1583171225648">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="400" y="88" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583083112360" />
-    <state width="1237" height="178" key="GridCell.Tab.0.bottom" timestamp="1583089694022">
+    <state x="400" y="88" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583171225648" />
+    <state width="1237" height="213" key="GridCell.Tab.0.bottom" timestamp="1583256741644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="178" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583089694022" />
-    <state width="1237" height="178" key="GridCell.Tab.0.center" timestamp="1583089694022">
+    <state width="1237" height="213" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583256741644" />
+    <state width="1237" height="213" key="GridCell.Tab.0.center" timestamp="1583256741644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="178" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583089694022" />
-    <state width="1237" height="178" key="GridCell.Tab.0.left" timestamp="1583089694022">
+    <state width="1237" height="213" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583256741644" />
+    <state width="1237" height="213" key="GridCell.Tab.0.left" timestamp="1583256741644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="178" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583089694022" />
-    <state width="1237" height="178" key="GridCell.Tab.0.right" timestamp="1583089694022">
+    <state width="1237" height="213" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583256741644" />
+    <state width="1237" height="213" key="GridCell.Tab.0.right" timestamp="1583256741644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="178" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583089694022" />
-    <state width="1237" height="227" key="GridCell.Tab.1.bottom" timestamp="1583007049492">
+    <state width="1237" height="213" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583256741644" />
+    <state width="1237" height="106" key="GridCell.Tab.1.bottom" timestamp="1583256446231">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="227" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583007049492" />
-    <state width="1237" height="227" key="GridCell.Tab.1.center" timestamp="1583007049491">
+    <state width="1237" height="106" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583256446231" />
+    <state width="1237" height="106" key="GridCell.Tab.1.center" timestamp="1583256446231">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="227" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583007049491" />
-    <state width="1237" height="227" key="GridCell.Tab.1.left" timestamp="1583007049491">
+    <state width="1237" height="106" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583256446231" />
+    <state width="1237" height="106" key="GridCell.Tab.1.left" timestamp="1583256446231">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="227" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583007049491" />
-    <state width="1237" height="227" key="GridCell.Tab.1.right" timestamp="1583007049491">
+    <state width="1237" height="106" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583256446231" />
+    <state width="1237" height="106" key="GridCell.Tab.1.right" timestamp="1583256446231">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="227" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583007049491" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1582996044176">
+    <state width="1237" height="106" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583256446231" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1583164105286">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1582996044176" />
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1583080435385">
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583164105286" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1583248576279">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1583080435385" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1583248576279" />
     <state x="305" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582985133783">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -335,5 +375,56 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1582973870180" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecificationsBuilder.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecificationsBuilder.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecificationsBuilder.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecificationsBuilder.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecificationsBuilder.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,10 +1,10 @@
 package com.search.service.service.impl;
 
 import com.search.service.beans.Student;
-import com.search.service.common.PersonSpecification;
 import com.search.service.repository.StudentRepo;
 import com.search.service.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,7 +32,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public List<Student> getStudent(PersonSpecification spec) {
+    public List<Student> getStudent(Specification spec) {
         return studentService.findAll(spec);
     }
 }
