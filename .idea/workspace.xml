@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cdf649f-d7eb-4760-a44e-5ea63137a0f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/beans/SearchCourseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/beans/SearchSpec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/beans/SearchStudentList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/AbstractSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/CourseSpecificationsBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/EulaSpecification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,9 +19,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/beans/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/beans/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/common/SearchOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/common/SearchOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/common/StudentSpecification$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/common/StudentSpecification.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/common/StudentSpecification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/common/StudentSpecificationsBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/common/StudentSpecificationsBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/controllers/RegisterEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/controllers/RegisterEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/controllers/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/controllers/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/repository/CourseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/repository/CourseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/CourseService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/impl/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/impl/CourseServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/search/service/service/impl/StudentServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/serach-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/serach-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.search.service.SerachServiceApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.search.service.SerachServiceApplicationTests.html" afterDir="false" />
@@ -25,10 +38,15 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/beans/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/beans/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/common/SearchOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/SearchOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecificationsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecificationsBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/controllers/RegisterEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/controllers/RegisterEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/repository/CourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/service/CourseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/service/impl/CourseServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/search/service/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/search/service/service/impl/StudentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +140,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tutorials-master/tutorials-master/spring-rest-query-language" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/search-aap-master/search-aap-master" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -130,11 +148,17 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.search.service.service.impl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.search.service.common" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\SWM\serach-service\serach-service\src\main\java\com\search\service\common" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SerachServiceApplication">
+  <component name="RunManager" selected="Gradle.serach-service [bootRun]">
     <configuration name="SerachServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.search.service.SerachServiceApplication" />
       <module name="serach-service.main" />
@@ -247,9 +271,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.serach-service [bootRun]" />
         <item itemvalue="Gradle.serach-service [classes]" />
         <item itemvalue="Gradle.serach-service [bootJar]" />
-        <item itemvalue="Gradle.serach-service [bootRun]" />
         <item itemvalue="Gradle.serach-service [build]" />
         <item itemvalue="Gradle.serach-service [clean]" />
       </list>
@@ -289,10 +313,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1582976552421" />
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1583252765971">
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1583428713726">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1583252765971" />
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1583428713726" />
     <state x="371" y="125" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582976546460">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -305,58 +329,58 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="89" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1583165751245" />
-    <state x="396" y="45" key="#xdebugger.evaluate" timestamp="1583259320076">
+    <state x="396" y="45" key="#xdebugger.evaluate" timestamp="1583434434380">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="396" y="45" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1583259320076" />
+    <state x="396" y="45" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1583434434380" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1582996886139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1582996886139" />
-    <state x="400" y="88" key="FileChooserDialogImpl" timestamp="1583171225648">
+    <state x="400" y="88" key="FileChooserDialogImpl" timestamp="1583434830145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="400" y="88" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583171225648" />
-    <state width="1237" height="194" key="GridCell.Tab.0.bottom" timestamp="1583260225092">
+    <state x="400" y="88" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583434830145" />
+    <state width="1237" height="275" key="GridCell.Tab.0.bottom" timestamp="1583436082043">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="194" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583260225092" />
-    <state width="1237" height="194" key="GridCell.Tab.0.center" timestamp="1583260225092">
+    <state width="1237" height="275" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583436082043" />
+    <state width="1237" height="275" key="GridCell.Tab.0.center" timestamp="1583436082043">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="194" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583260225092" />
-    <state width="1237" height="194" key="GridCell.Tab.0.left" timestamp="1583260225092">
+    <state width="1237" height="275" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583436082043" />
+    <state width="1237" height="275" key="GridCell.Tab.0.left" timestamp="1583436082043">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="194" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583260225092" />
-    <state width="1237" height="194" key="GridCell.Tab.0.right" timestamp="1583260225092">
+    <state width="1237" height="275" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583436082043" />
+    <state width="1237" height="275" key="GridCell.Tab.0.right" timestamp="1583436082043">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="194" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583260225092" />
-    <state width="1237" height="194" key="GridCell.Tab.1.bottom" timestamp="1583260225092">
+    <state width="1237" height="275" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583436082043" />
+    <state width="1237" height="275" key="GridCell.Tab.1.bottom" timestamp="1583436082047">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="194" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583260225092" />
-    <state width="1237" height="194" key="GridCell.Tab.1.center" timestamp="1583260225092">
+    <state width="1237" height="275" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583436082047" />
+    <state width="1237" height="275" key="GridCell.Tab.1.center" timestamp="1583436082043">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="194" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583260225092" />
-    <state width="1237" height="194" key="GridCell.Tab.1.left" timestamp="1583260225092">
+    <state width="1237" height="275" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583436082043" />
+    <state width="1237" height="275" key="GridCell.Tab.1.left" timestamp="1583436082043">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="194" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583260225092" />
-    <state width="1237" height="194" key="GridCell.Tab.1.right" timestamp="1583260225092">
+    <state width="1237" height="275" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583436082043" />
+    <state width="1237" height="275" key="GridCell.Tab.1.right" timestamp="1583436082043">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="194" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583260225092" />
+    <state width="1237" height="275" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583436082043" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1583164105286">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583164105286" />
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1583248576279">
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1583417888860">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1583248576279" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1583417888860" />
     <state x="305" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582985133783">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -371,28 +395,53 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="25" />
+          <line>70</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/service/impl/StudentServiceImpl.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecificationsBuilder.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/common/AbstractSpecification.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/common/AbstractSpecification.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/service/impl/CourseServiceImpl.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="26" />
+          <line>59</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="27" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/service/impl/CourseServiceImpl.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="28" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/common/StudentSpecificationsBuilder.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/controllers/SearchController.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="36" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/search/service/common/SpecSearchCriteria.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -56,7 +56,7 @@ public class StudentSpecificationsBuilder {
         return result;
     }
 
-    public final StudentSpecificationsBuilder with(StudentSpecification spec) {
+    /*public final StudentSpecificationsBuilder with(StudentSpecification spec) {
         params.add(spec.getCriteria());
         return this;
     }
@@ -64,5 +64,5 @@ public class StudentSpecificationsBuilder {
     public final StudentSpecificationsBuilder with(SpecSearchCriteria criteria) {
         params.add(criteria);
         return this;
-    }
+    }*/
 }

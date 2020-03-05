@@ -1,6 +1,9 @@
 package com.search.service.service.impl;
 
+import com.search.service.beans.SearchSpec;
+import com.search.service.beans.SearchStudentList;
 import com.search.service.beans.Student;
+import com.search.service.common.StudentSpecificationsBuilder;
 import com.search.service.repository.StudentRepo;
 import com.search.service.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,9 +35,16 @@ public class StudentServiceImpl implements StudentService {
         return studentService.save(student);
     }
 
-    @Override
-    public List<Student> getStudent(Specification spec) {
-        return studentService.findAll(spec);
+
+    public List<Student> getStudents(SearchStudentList spec) {
+        StudentSpecificationsBuilder builder = new StudentSpecificationsBuilder();
+        List l =spec.getSearchSpecList();
+        for(int i=0; i<l.size(); i++){
+            SearchSpec s = (SearchSpec) l.get(i);
+            builder.with(s.getIsPredicate(),s.getKey(),s.getOps(),s.getValue(),s.getPrefix(),s.getSuffix());
+        }
+        Specification s1 = builder.build();
+        return studentService.findAll(s1);
     }
     @Override
     public List<Student> getAllBySpecification(Specification<Student> specification) {

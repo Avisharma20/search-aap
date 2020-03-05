@@ -29,6 +29,7 @@ public enum SearchOperation {
                 return LESS_THAN;
             case '~':
                 return LIKE;
+
             default:
                 return null;
         }

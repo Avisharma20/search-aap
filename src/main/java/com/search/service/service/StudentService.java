@@ -1,5 +1,6 @@
 package com.search.service.service;
 
+import com.search.service.beans.SearchStudentList;
 import com.search.service.beans.Student;
 import org.springframework.data.jpa.domain.Specification;
 
@@ -13,7 +14,6 @@ public interface StudentService {
 
    public Student registerStudent(Student student);
 
-   public List<Student> getStudent(Specification spec);
-
+   public List<Student> getStudents(SearchStudentList spec);
    public List<Student> getAllBySpecification(Specification<Student> specification);
 }
